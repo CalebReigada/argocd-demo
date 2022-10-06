@@ -1,0 +1,3 @@
+deployment:
+  image: "calebreigada/example-app"
+  tag: "0.1"
