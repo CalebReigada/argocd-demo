@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: example-app-svc
 spec:
+  type: NodePort
   selector:
     app: example-app
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 30100
